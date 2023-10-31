@@ -17,7 +17,7 @@ public class Bridge : MonoBehaviour
     void FixedUpdate()
     {
         if (triggered && transform.rotation.eulerAngles.x >= 180f)
-            transform.Rotate(Vector3.right * (40f * Time.deltaTime));
+            transform.Rotate(Vector3.right * (-40f * Time.deltaTime));
 
         //Debug.Log(message:$"Bridge angle {transform.rotation.eulerAngles.x}");
 

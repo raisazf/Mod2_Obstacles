@@ -27,10 +27,10 @@ public class Oscillator : MonoBehaviour
 
 
         startingPosition = transform.position;
-        //positivEnd = transform.position + (direction * movementDistance);
-        //negativeEnd = transform.position - (direction * movementDistance);
-        positivEnd = new Vector3(transform.position.x, transform.position.y, transform.position.z + movementDistance);
-        negativeEnd = new Vector3(transform.position.x, transform.position.y, transform.position.z - movementDistance);
+        positivEnd = transform.position + (direction * movementDistance);
+        negativeEnd = transform.position - (direction * movementDistance);
+        //positivEnd = new Vector3(transform.position.x, transform.position.y, transform.position.z + movementDistance);
+        //negativeEnd = new Vector3(transform.position.x, transform.position.y, transform.position.z - movementDistance);
 
         //Debug.Log(message: $"{startingPosition} {direction * movementDistance} {positivEnd}  {negativeEnd}");
     }
